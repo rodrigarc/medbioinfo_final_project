@@ -1,5 +1,6 @@
 
-results/*
+results/*.png
+Results/*.csv
 data/*gz
 *.DS_Store
 src/.ipynb_checkpoints/2021-06-24_protein-interactions-and-domains-checkpoint.ipynb
