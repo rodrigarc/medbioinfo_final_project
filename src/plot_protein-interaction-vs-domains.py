@@ -62,7 +62,7 @@ def plotting_degre_x_domains(dataframe):
     plt.xlabel('Node degree')
     plt.ylabel('# protein domains')
     plot.set(yscale="log")
-    plt.savefig('../results/protein_intereactions-domains.png')
+    plt.savefig('../results/protein_domains_vs_string_degree.png')
     
 plotting_degre_x_domains(prot_domain_count)
 
