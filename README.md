@@ -32,8 +32,8 @@ Create a GitHub repository containing a Makefile so that when we download the pr
 
 
 ```
-git clone your_repo.git
-cd your_repo
+git clone https://github.com/rodrigarc/medbioinfo_final_project
+cd medbioinfo_final_project
 make
 ```
 
