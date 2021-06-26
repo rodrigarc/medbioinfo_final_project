@@ -3,7 +3,15 @@
 Final project for the course of Applied Bioinformatics from The Swedish National Graduate School in Medical Bioinformatics ([MedBioinfo](http://www.medbioinfo.se/))
 
 ## Dependencies:
-  # python > 3, wget, pandas, numpy, networkx, matplotlib, seaborn, operator
+  * python > 3
+  * wget
+  * pandas
+  * numpy
+  * networkx
+  * matplotlib 
+  * seaborn
+  * operator
+  * GNU make
 
 ## Assignment instructions:
 
