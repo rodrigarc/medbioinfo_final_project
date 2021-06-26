@@ -2,6 +2,9 @@
 
 Final project for the course of Applied Bioinformatics from The Swedish National Graduate School in Medical Bioinformatics ([MedBioinfo](http://www.medbioinfo.se/))
 
+## Dependencies:
+  # python > 3, wget, pandas, numpy, networkx, matplotlib, seaborn, operator
+
 ## Assignment instructions:
 
 Here we want you to explore whether proteins with a high node-degree in protein interaction networks, also have a larger number of protein domains.
