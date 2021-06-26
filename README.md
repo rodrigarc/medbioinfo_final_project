@@ -17,7 +17,7 @@ The link above is from their download page.
 https://stockholmuniversity.box.com/s/n8l0l1b3tg32wrzg2ensg8dnt7oua8ex
 This file was exported from Ensembl's BioMart (Links to an external site.) service and contains two columns: Pfam ID (for protein domains) and Ensembl protein ID (which is also used by the string database). Note: some proteins have no protein domain registered.
 5. Make a boxplot, comparing the number of domains of proteins with node degrees >100 to the ones with node degrees <=100.
-Create a GitHub repository containing a Makefile so that when we download the project we could run the command
+Create a GitHub repository containing a Makefile so that when we download the project we could run the following command to get a file "protein_domains_vs_string_degree.png":
 
 
 ```
@@ -26,4 +26,4 @@ cd your_repo
 make
 ```
 
-If we get a file "protein_domains_vs_string_degree.png". Your project succeeds if we succeed reproducing the plot!
+Your project succeeds if we succeed reproducing the plot!
