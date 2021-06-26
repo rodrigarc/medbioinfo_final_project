@@ -19,11 +19,11 @@ from operator import itemgetter
 import networkx as nx
 
 # loading data
-network_data_frame = pd.read_csv('../data/9606.protein.links.v11.0.txt.gz', compression='gzip',
+network_data_frame = pd.read_csv('data/9606.protein.links.v11.0.txt.gz', compression='gzip',
                                   sep=' ')
 network_data_frame = network_data_frame[network_data_frame['combined_score'] >= 500]
 
-protein_domain = pd.read_csv('../data/proteins_w_domains.txt', sep='\t').rename(columns = {'Pfam ID': 'domain_ID', 'Protein stable ID': 'protein_ID'}, inplace = False)
+protein_domain = pd.read_csv('data/proteins_w_domains.txt', sep='\t').rename(columns = {'Pfam ID': 'domain_ID', 'Protein stable ID': 'protein_ID'}, inplace = False)
 
 # generating network data
 network = nx.from_pandas_edgelist(network_data_frame, source = 'protein1', target = 'protein2')
@@ -62,7 +62,7 @@ def plotting_degre_x_domains(dataframe):
     plt.xlabel('Node degree')
     plt.ylabel('# protein domains')
     plot.set(yscale="log")
-    plt.savefig('../results/protein_domains_vs_string_degree.png')
+    plt.savefig('results/protein_domains_vs_string_degree.png')
     
 plotting_degre_x_domains(prot_domain_count)
 
@@ -76,4 +76,4 @@ def basic_statistics(dataframe, file_output):
     stats_by_node.to_csv(file_output)
     
 
-basic_statistics(prot_domain_count, '../results/basic_statistics.csv')
+basic_statistics(prot_domain_count, 'results/basic_statistics.csv')

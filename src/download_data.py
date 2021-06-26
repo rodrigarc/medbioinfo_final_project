@@ -11,5 +11,5 @@
 import wget
 
 url = "https://stringdb-static.org/download/protein.links.v11.0/9606.protein.links.v11.0.txt.gz"
-path = '../data/'
+path = 'data/'
 wget.download(url,out = path)
