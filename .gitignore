@@ -1,0 +1,5 @@
+
+results/*
+*.DS_Store
+src/.ipynb_checkpoints/2021-06-24_protein-interactions-and-domains-checkpoint.ipynb
+.DS_Store
