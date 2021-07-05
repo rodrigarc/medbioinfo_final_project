@@ -2,7 +2,6 @@
 
 # Run the analysis
 results : src/plot_protein-interaction-vs-domains.py data data/proteins_w_domains.txt data/9606.protein.links.v11.0.txt.gz 
-	conda activate medbioinfo_rodrigo
 	python3.8 $<
 
 # Download data with python script from the protein interactions
@@ -10,7 +9,6 @@ results : src/plot_protein-interaction-vs-domains.py data data/proteins_w_domain
 #	conda env create --file=$<
 data : 9606.protein.links.v11.0.txt.gz data/proteins_w_domains.txt
 9606.protein.links.v11.0.txt.gz : src/download_data.py 
-	conda activate medbioinfo_rodrigo
 	python3.8 $<
 
 .PHONY : clean
