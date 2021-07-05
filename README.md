@@ -40,7 +40,7 @@ Your project succeeds if we succeed reproducing the plot!
 ```
 git clone https://github.com/rodrigarc/medbioinfo_final_project
 cd medbioinfo_final_project
-bash run_script.sh
+make
 ```
 
 * run_script.sh calls `make`, I have done this because I wanted to load my conda environment (`environment.yml`) prior running make, so my environment is used. This approach was used to try to overcome the previous problem with the incompatible `pandas` version used.
