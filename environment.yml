@@ -1,4 +1,4 @@
-name: medbioinfo
+name: medbioinfo_rodrigo
 channels:
   - conda-forge
   - bioconda

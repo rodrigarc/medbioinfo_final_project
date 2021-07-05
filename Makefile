@@ -9,7 +9,7 @@ envir: environment.yml
 	conda env create --file=$<
 	conda activate medbioinfo
 data : 9606.protein.links.v11.0.txt.gz data/proteins_w_domains.txt envir
-9606.protein.links.v11.0.txt.gz : src/download_data.py 
+9606.protein.links.v11.0.txt.gz : src/download_data.py envir
 	python $<
 
 .PHONY : clean
