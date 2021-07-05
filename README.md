@@ -30,11 +30,11 @@ This file was exported from Ensembl's BioMart (Links to an external site.) servi
 5. Make a boxplot, comparing the number of domains of proteins with node degrees >100 to the ones with node degrees <=100.
 Create a GitHub repository containing a Makefile so that when we download the project we could run the following command to get a file "protein_domains_vs_string_degree.png":
 
-
+Your project succeeds if we succeed reproducing the plot!
 ```
 git clone https://github.com/rodrigarc/medbioinfo_final_project
 cd medbioinfo_final_project
-make
+bash run_script.sh
 ```
 
-Your project succeeds if we succeed reproducing the plot!
+* run_script.sh calls `make`, I have done this because I wanted to load my conda environment (`environment.yml`) prior running make, so my environment is used. This approach was used to try to overcome the previous problem with the incompatible `pandas` version used.
