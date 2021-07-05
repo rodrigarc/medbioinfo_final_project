@@ -6,8 +6,9 @@ results : src/plot_protein-interaction-vs-domains.py data envir data/proteins_w_
 
 # Download data with python script from the protein interactions
 envir: environment.yml
+	conda init zsh
 	conda env create --file=$<
-	conda activate medbioinfo
+	source activate medbioinfo
 data : 9606.protein.links.v11.0.txt.gz data/proteins_w_domains.txt envir
 9606.protein.links.v11.0.txt.gz : src/download_data.py envir
 	python $<
