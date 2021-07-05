@@ -8,6 +8,7 @@ Final project for the course of Applied Bioinformatics from The Swedish National
  cd medbioinfo_final_project
  bash run_script.sh
  ```
+ The bash script calls the conda environment and loads it before running `make`. This was done to avoid incompatibility due to different versions of softwares. 
 ## Dependencies:
   * python 3.8.10
   * wget 3.2
