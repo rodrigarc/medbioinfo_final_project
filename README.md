@@ -2,6 +2,12 @@
 
 Final project for the course of Applied Bioinformatics from The Swedish National Graduate School in Medical Bioinformatics ([MedBioinfo](http://www.medbioinfo.se/))
 
+# How to run the program:
+ ```
+ git clone https://github.com/rodrigarc/medbioinfo_final_project
+ cd medbioinfo_final_project
+ bash run_script.sh
+ ```
 ## Dependencies:
   * python 3.8.10
   * wget 3.2
